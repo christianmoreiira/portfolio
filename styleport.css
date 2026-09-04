@@ -1,0 +1,403 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+.topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.6));
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+#logo {
+    width: 60px;
+    height: 30px;
+}
+
+.menu {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    transition:
+        transform 0.3s ease,
+        color 0.3s;
+}
+
+.menu a:hover {
+    color: #7f81ff;
+    transform: scale(1.1);
+}
+
+body {
+    margin: 0;
+    padding-top: 60px;
+    background: linear-gradient(to bottom,
+            #2196F3,
+            #b57600);
+}
+
+section {
+    padding: 60px 20px;
+    min-height: 100vh;
+    font-family: "Roboto Mono", monospace;
+}
+
+#ponto {
+    display: inline-block;
+    animation: piscar 2s infinite;
+}
+
+@keyframes piscar {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#ola {
+    color: white;
+    display: inline;
+    font-size: 100px;
+    font-family: "Roboto Mono", monospace;
+    cursor: default;
+}
+
+#foto:hover {
+    transform: scale(1.02);
+}
+
+
+#textohome {
+    color: white;
+    display: inline;
+    font-family: "Roboto Mono", monospace;
+    cursor: default;
+}
+
+#home {
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    padding-top: 10px;
+}
+
+/* IMAGENS HOME */
+
+#img1 {
+    width: 250px;
+    transition: transform 0.3s ease;
+    border-radius: 10%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.9);
+
+}
+
+#img2 {
+    width: 300px;
+    transition: transform 0.3s ease;
+    border-radius: 10%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.9);
+}
+
+#img3 {
+    width: 250px;
+    transition: transform 0.3s ease;
+    border-radius: 10%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.9);
+}
+
+#img1:hover,
+#img2:hover,
+#img3:hover {
+    transform: scale(1.1);
+}
+
+#imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 70px;
+}
+
+/*SEÇÃO SOBRE MIM*/
+
+#sobre {
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    scroll-margin-top: -300px;
+}
+
+#sobretittle {
+    font-size: 60px;
+    margin-top: 300px;
+}
+
+#sobretext {
+    padding-top: 35px;
+    font-size: 15px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/*SEÇÃO CURSOS*/
+
+#cursos {
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    margin-top: 180px;
+    scroll-margin-top: -100px;
+}
+
+#curtittle {
+    font-size: 60px;
+    padding-top: 20px;
+}
+
+#cursotexto {
+    font-size: 15px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+#etec {
+    border-radius: 10%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.9);
+
+}
+
+#fatec {
+    border-radius: 10%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.9);
+}
+
+#fatec:hover,
+#etec:hover {
+    transform: scale(1.1);
+}
+
+#curimg {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    width: 60%;
+    margin: 40px auto;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+
+/*SEÇÃO EXPERIÊNCIAS*/
+
+#experiencias {
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    scroll-margin-top: -280px;
+}
+
+#exptittle {
+    font-size: 60px;
+    margin-top: 250px;
+}
+
+#exptext {
+    padding-top: 35px;
+    font-size: 15px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+#expimg {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 120px;
+    width: 60%;
+    margin: 40px auto;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+#unylogo {
+    border-radius: 10%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.9);
+
+}
+
+#dhllogo {
+    border-radius: 10%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.9);
+}
+
+#dhllogo:hover,
+#unylogo:hover {
+    transform: scale(1.1);
+}
+
+/*SEÇÃO CONTATO*/
+
+#contato {
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    margin-top: 160px;
+    scroll-margin-top: -40px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: "Roboto Mono", monospace;
+}
+
+button {
+    width: 100%;
+    background-color: #E4405F;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#form {
+    background-color: white;
+    position: relative;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin: 0 auto;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/*REDES SOCIAIS*/
+
+.redes-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.rede-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.rede-item:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.icone-rede {
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* VIRGULA */
+
+#virgula {
+    display: inline-block;
+    animation: blink 1.5s step-start infinite;
+}
+
+@keyframes blink {
+    20% {
+        opacity: 0;
+    }
+}
+
+
+
+
+
+/* RODAPÉ */
+
+#rodape {
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.7));
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.4);
+    margin-top: 70px;
+}
