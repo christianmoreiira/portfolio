@@ -22,6 +22,7 @@ html {
     color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 1000;
@@ -31,17 +32,16 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
 }
 
 #logo {
-    width: 60px;
-    height: 30px;
+    display: flex;
+    align-items: center;
 }
 
 #logo-img {
-    width: 60px;
-    height: 30px;
+    height: 40px;
+    width: auto;
     object-fit: contain;
 }
 
@@ -446,14 +446,9 @@ button:hover {
         height: auto;
     }
 
-    #logo {
-        width: 60px;
-        height: 30px;
-    }
-
     #logo-img {
-        width: 60px;
-        height: 30px;
+        height: 35px;
+        width: auto;
     }
 
     .menu {
